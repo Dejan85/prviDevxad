@@ -1,6 +1,10 @@
 {
   "name": "devxad",
   "version": "1.0.0",
+  "engines": {
+    "node": "10.13.0",
+    "npm": "6.4.1"
+  },
   "description": "This is my portfolio MERN App",
   "main": "server.js",
   "scripts": {
