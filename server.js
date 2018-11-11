@@ -2,9 +2,7 @@ const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.get("/", async (req, res) => {
-  res.render("index");
-});
+app.use(express.static("public"));
 
 //create server
 app.listen(PORT, () => {
