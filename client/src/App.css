@@ -31,10 +31,10 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    /* outline: 1px solid red; */
     background-color: #1b1b1b;
     /* padding-bottom: 300px; */
     overflow: auto;
+    /* outline: 1px solid red; */
 }
 
 /*
@@ -162,8 +162,6 @@ nav ul li a:hover {
     margin: auto;
     /* outline: 1px solid white; */
     color: #ffffff;
-    max-width: 1050px;
-    width: 100%;
     padding: 25px;
     margin-top: 270px;
     background-color: #1b1b1b;
@@ -258,7 +256,8 @@ nav ul li a:hover {
 */
 
 .home_about {
-    height: 1100px;
+    max-height: 1100px;
+    height: 100%;
     background-color: #ededf5;
     background-image: url(./components/img/background.png);
     background-repeat: no-repeat;
@@ -278,6 +277,7 @@ nav ul li a:hover {
     padding: 25px;
     box-sizing: border-box;
     padding-top: 200px;
+    /* outline: 1px solid red; */
 }
 
 .home_about_exp_p_cont {
@@ -538,10 +538,12 @@ nav ul li a:hover {
 
 .workflow_project_description p {
     padding-top: 40px;
+    padding-right: 20px;
+    box-sizing: border-box;
     color: rgb(214, 214, 214);
     font-size: 12px;
     font-weight: 500;
-    width: 400px;
+    /* width: 400px; */
 }
 
 .workflow_project_description a {
