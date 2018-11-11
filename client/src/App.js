@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import "./responsive/600.css";
+// import "./responsive/600.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import jwt_decode from "jwt-decode";
 import setAuthToken from "./utils/setAuthToken";
