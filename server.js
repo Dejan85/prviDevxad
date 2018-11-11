@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 
-app.use(express.static("public"));
+// app.use(express.static("public"));
 
 // Serve static files from the React frontend app
 app.use(express.static(path.join(__dirname, "client/build")));
