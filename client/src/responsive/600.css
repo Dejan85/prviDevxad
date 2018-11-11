@@ -1,12 +1,12 @@
-@media all and (max-width: 600px) {
-    .nav_container {
-        outline: 1px solid red;
-    }
-    .nav_container ul {
-        display: none;
-    }
-    .home {
-        display: flex;
-        flex-direction: column;
-    }
+@media all and (max-width: 380px) {
+  .nav_container {
+    outline: 1px solid red;
+  }
+  .nav_container ul {
+    display: none;
+  }
+  .home {
+    display: flex;
+    flex-direction: column;
+  }
 }
