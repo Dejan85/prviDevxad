@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { logoutUser } from "../../../redux/actions/authActions";
 import ResponsiveNabBar from "./ResponsiveNavBar";
-let menu;
 
 class NavBar extends Component {
   constructor(props) {
@@ -22,6 +21,11 @@ class NavBar extends Component {
 
   render() {
     const { auth } = this.props;
+    window.onmousewheel = () => {
+      this.setState({
+        toggleMenu: false
+      });
+    };
 
     return (
       <div className="nav_container">
