@@ -27,6 +27,10 @@
         font-size: 18px;
         font-weight: 700;
     }
+    .work_experience ul li,
+    .tehnical_skills ul li {
+        font-size: 15px;
+    }
     /*
    * ─── WORKFLOW ───────────────────────────────────────────────────────────────────
    */
