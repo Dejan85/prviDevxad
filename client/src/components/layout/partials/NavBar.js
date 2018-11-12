@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import { logoutUser } from "../../../redux/actions/authActions";
 import ResponsiveNabBar from "./ResponsiveNavBar";
 
 class NavBar extends Component {
@@ -20,7 +19,6 @@ class NavBar extends Component {
   };
 
   render() {
-    console.log(window);
     const { auth } = this.props;
     window.onscroll = () => {
       this.setState({
@@ -53,14 +51,6 @@ class NavBar extends Component {
             <li>
               <Link to="/">Contact </Link>
             </li>
-
-            {auth.isAuthenticated && (
-              <li onClick={this.props.logoutUser} className="logout_li">
-                Logout:{" "}
-                {/* <img className="avatar" src={auth.user.avatar} alt="avatar" />  */}
-                {auth.user.name}
-              </li>
-            )}
           </ul>
 
           <ul className="responsive_nav">
@@ -75,11 +65,4 @@ class NavBar extends Component {
   }
 }
 
-const mapStateToProps = state => ({
-  auth: state.auth
-});
-
-export default connect(
-  mapStateToProps,
-  { logoutUser }
-)(NavBar);
+export default NavBar;
