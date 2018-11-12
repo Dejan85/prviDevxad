@@ -2,15 +2,47 @@
   /*
      * ─── NAV ────────────────────────────────────────────────────────────────────────
      */
+  .nav_container {
+    /* outline: 1px solid red; */
+  }
   .nav_container ul {
     display: none;
   }
+  /*
+     * ─── RESPONSIVE NAV ─────────────────────────────────────────────────────────────
+     */
   .responsive_nav {
-    display: block !important;
+    display: flex !important;
     color: white;
+    width: 250px !important;
   }
   .responsive_nav li i {
-    font-size: 35px;
+    margin-left: 160px;
+  }
+  .responsive_nav_li_ul {
+    display: block !important;
+    position: absolute;
+    padding-top: 40px;
+    margin-left: 85px;
+    width: 100px !important;
+    background-color: #1b1b1b;
+  }
+  .responsive_nav_li_ul li {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    text-align: right;
+  }
+  .responsive_nav_li_ul li a {
+    text-align: right !important;
+  }
+  .responsive_nav li i {
+    font-size: 30px;
+  }
+  .responsive_nav_li_ul li {
+    display: block;
   }
   /*
    * ─── HOME ───────────────────────────────────────────────────────────────────────

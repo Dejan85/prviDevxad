@@ -1,55 +1,74 @@
-import React from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { logoutUser } from "../../../redux/actions/authActions";
+import ResponsiveNabBar from "./ResponsiveNavBar";
+let menu;
 
-const NavBar = props => {
-  const { auth } = props;
+class NavBar extends Component {
+  constructor(props) {
+    super(props);
 
-  return (
-    <div className="nav_container">
-      <nav>
-        <div className="logo">
-          <Link to="/">
-            <h1>
-              D<span>evxad</span>
-            </h1>
-          </Link>
-        </div>
-        <ul>
-          <li>
-            <Link className="active" to="/">
-              Home
+    this.state = {
+      toggleMenu: false
+    };
+  }
+
+  showMenu = () => {
+    this.setState({
+      toggleMenu: !this.state.toggleMenu
+    });
+  };
+
+  render() {
+    const { auth } = this.props;
+
+    return (
+      <div className="nav_container">
+        <nav>
+          <div className="logo">
+            <Link to="/">
+              <h1>
+                D<span>evxad</span>
+              </h1>
             </Link>
-          </li>
-          <li>
-            <Link to="/">Projects</Link>
-          </li>
-          <li>
-            <Link to="/">About</Link>
-          </li>
-          <li>
-            <Link to="/">Contact </Link>
-          </li>
-
-          {auth.isAuthenticated && (
-            <li onClick={props.logoutUser} className="logout_li">
-              Logout:{" "}
-              {/* <img className="avatar" src={auth.user.avatar} alt="avatar" />  */}
-              {auth.user.name}
+          </div>
+          <ul>
+            <li>
+              <Link className="active" to="/">
+                Home
+              </Link>
             </li>
-          )}
-        </ul>
+            <li>
+              <Link to="/">Projects</Link>
+            </li>
+            <li>
+              <Link to="/">About</Link>
+            </li>
+            <li>
+              <Link to="/">Contact </Link>
+            </li>
 
-        <ul className="responsive_nav">
-          <li>
-            <i class="fas fa-bars" />
-          </li>
-        </ul>
-      </nav>
-    </div>
-  );
-};
+            {auth.isAuthenticated && (
+              <li onClick={this.props.logoutUser} className="logout_li">
+                Logout:{" "}
+                {/* <img className="avatar" src={auth.user.avatar} alt="avatar" />  */}
+                {auth.user.name}
+              </li>
+            )}
+          </ul>
+
+          <ul className="responsive_nav">
+            <li>
+              <i className="fas fa-bars" onClick={this.showMenu} />
+              {this.state.toggleMenu && <ResponsiveNabBar />}
+            </li>
+          </ul>
+        </nav>
+      </div>
+    );
+  }
+}
 
 const mapStateToProps = state => ({
   auth: state.auth
