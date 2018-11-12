@@ -19,7 +19,9 @@ class Workflow extends Component {
         <div className="workflow_project">
           <div className="workflow_project_img">
             i<img src={pigGame} alt="" />
+            <Link to="/">Try it live</Link>
           </div>
+
           <div className="workflow_project_description">
             <div className="workflow_project_description_line" />
             <h6>Simple Javascript game</h6>
@@ -36,6 +38,7 @@ class Workflow extends Component {
         <div className="workflow_project">
           <div className="workflow_project_img">
             i<img src={bankapp} alt="" />
+            <Link to="/">Try it live</Link>
           </div>
           <div className="workflow_project_description">
             <div className="workflow_project_description_line" />
@@ -55,6 +58,7 @@ class Workflow extends Component {
         <div className="workflow_project">
           <div className="workflow_project_img">
             i<img src={node3} alt="" />
+            <Link to="/">Try it live</Link>
           </div>
           <div className="workflow_project_description">
             <div className="workflow_project_description_line" />
@@ -74,6 +78,7 @@ class Workflow extends Component {
         <div className="workflow_project">
           <div className="workflow_project_img">
             i<img src={todoapp} alt="" />
+            <Link to="/">Try it live</Link>
           </div>
           <div className="workflow_project_description">
             <div className="workflow_project_description_line" />
@@ -93,6 +98,7 @@ class Workflow extends Component {
         <div className="workflow_project">
           <div className="workflow_project_img">
             i<img src={colorGame} alt="" />
+            <Link to="/">Try it live</Link>
           </div>
           <div className="workflow_project_description">
             <div className="workflow_project_description_line" />

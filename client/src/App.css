@@ -256,8 +256,7 @@ nav ul li a:hover {
 */
 
 .home_about {
-  max-height: 1100px;
-  height: 100%;
+  height: 1100px;
   background-color: #ededf5;
   background-image: url(./components/img/background.png);
   background-repeat: no-repeat;
@@ -497,6 +496,12 @@ nav ul li a:hover {
   display: flex;
 }
 
+/*this will be diplay block only on max width 480px*/
+
+.workflow_project_img a {
+  display: none;
+}
+
 .workflow_project_img img {
   max-width: 800px;
   width: 100%;
@@ -543,7 +548,8 @@ nav ul li a:hover {
   color: rgb(214, 214, 214);
   font-size: 12px;
   font-weight: 500;
-  /* width: 400px; */
+  max-width: 400px;
+  width: 100%;
 }
 
 .workflow_project_description a {

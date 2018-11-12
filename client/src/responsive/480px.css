@@ -1,0 +1,58 @@
+@media all and (max-width: 480px) {
+    /*
+     * ─── NAV ────────────────────────────────────────────────────────────────────────
+     */
+    .nav_container ul {
+        display: none;
+    }
+    /*
+   * ─── HOME ───────────────────────────────────────────────────────────────────────
+   */
+    .home {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .home h2 {
+        display: none;
+    }
+    .home_about {
+        height: auto;
+    }
+    /*
+   * ─── WORK AND TEHNICAL EXPERIENCE ───────────────────────────────────────────────
+   */
+    .work_experience h1 span,
+    .tehnical_skills h1 span {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    /*
+   * ─── WORKFLOW ───────────────────────────────────────────────────────────────────
+   */
+    .workflow_project {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 50px;
+    }
+    .workflow_project_description {
+        margin: auto;
+    }
+    .workflow_project_img {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        margin: auto;
+    }
+    .workflow_project_img a {
+        display: block;
+        padding-top: 30px;
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 600;
+        text-decoration-line: none;
+    }
+    .workflow_project_description a {
+        display: none;
+    }
+}
