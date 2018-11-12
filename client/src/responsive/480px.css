@@ -5,6 +5,13 @@
   .nav_container ul {
     display: none;
   }
+  .responsive_nav {
+    display: block !important;
+    color: white;
+  }
+  .responsive_nav li i {
+    font-size: 35px;
+  }
   /*
    * ─── HOME ───────────────────────────────────────────────────────────────────────
    */
@@ -63,25 +70,21 @@
    * ─── LOGIN ──────────────────────────────────────────────────────────────────────
    */
   .register,
- .login {
-     margin-top: 150px;
- }
-
- .register_form {
-     padding-left: 0;
-     padding-right: 0;
- }
-
- .form_input {
-     width: 90%;
- }
-
- .form_input input {
-     width: 100%;
- }
-
- .login_btn_cont {
-     /* outline: 1px solid white; */
-     width: 92% !important;
- }
+  .login {
+    margin-top: 150px;
+  }
+  .register_form {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .form_input {
+    width: 90%;
+  }
+  .form_input input {
+    width: 100%;
+  }
+  .login_btn_cont {
+    /* outline: 1px solid white; */
+    width: 92% !important;
+  }
 }

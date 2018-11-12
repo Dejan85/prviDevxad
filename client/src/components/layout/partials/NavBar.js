@@ -40,6 +40,12 @@ const NavBar = props => {
             </li>
           )}
         </ul>
+
+        <ul className="responsive_nav">
+          <li>
+            <i class="fas fa-bars" />
+          </li>
+        </ul>
       </nav>
     </div>
   );
