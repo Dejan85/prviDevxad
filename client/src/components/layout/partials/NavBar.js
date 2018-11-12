@@ -20,8 +20,9 @@ class NavBar extends Component {
   };
 
   render() {
+    console.log(window);
     const { auth } = this.props;
-    window.onmousewheel = () => {
+    window.onscroll = () => {
       this.setState({
         toggleMenu: false
       });
