@@ -1,62 +1,87 @@
 @media all and (max-width: 480px) {
-    /*
+  /*
      * ─── NAV ────────────────────────────────────────────────────────────────────────
      */
-    .nav_container ul {
-        display: none;
-    }
-    /*
+  .nav_container ul {
+    display: none;
+  }
+  /*
    * ─── HOME ───────────────────────────────────────────────────────────────────────
    */
-    .home {
-        display: flex;
-        flex-direction: column;
-        margin-top: 100px;
-    }
-    .home h2 {
-        display: none;
-    }
-    .home_about {
-        height: auto;
-    }
-    /*
+  .home {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+  }
+  .home h2 {
+    display: none;
+  }
+  .home_about {
+    height: auto;
+  }
+  /*
    * ─── WORK AND TEHNICAL EXPERIENCE ───────────────────────────────────────────────
    */
-    .work_experience h1 span,
-    .tehnical_skills h1 span {
-        font-size: 18px;
-        font-weight: 700;
-    }
-    .work_experience ul li,
-    .tehnical_skills ul li {
-        font-size: 15px;
-    }
-    /*
+  .work_experience h1 span,
+  .tehnical_skills h1 span {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .work_experience ul li,
+  .tehnical_skills ul li {
+    font-size: 14px;
+  }
+  /*
    * ─── WORKFLOW ───────────────────────────────────────────────────────────────────
    */
-    .workflow_project {
-        display: flex;
-        flex-direction: column-reverse;
-        margin-top: 50px;
-    }
-    .workflow_project_description {
-        margin: auto;
-    }
-    .workflow_project_img {
-        display: flex;
-        flex-direction: column;
-        padding-top: 20px;
-        margin: auto;
-    }
-    .workflow_project_img a {
-        display: block;
-        padding-top: 30px;
-        color: #ffffff;
-        font-size: 15px;
-        font-weight: 600;
-        text-decoration-line: none;
-    }
-    .workflow_project_description a {
-        display: none;
-    }
+  .workflow_project {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 50px;
+  }
+  .workflow_project_description {
+    margin: auto;
+  }
+  .workflow_project_img {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    margin: auto;
+  }
+  .workflow_project_img a {
+    display: block;
+    padding-top: 30px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration-line: none;
+  }
+  .workflow_project_description a {
+    display: none;
+  }
+  /*
+   * ─── LOGIN ──────────────────────────────────────────────────────────────────────
+   */
+  .register,
+ .login {
+     margin-top: 150px;
+ }
+
+ .register_form {
+     padding-left: 0;
+     padding-right: 0;
+ }
+
+ .form_input {
+     width: 90%;
+ }
+
+ .form_input input {
+     width: 100%;
+ }
+
+ .login_btn_cont {
+     /* outline: 1px solid white; */
+     width: 92% !important;
+ }
 }

@@ -600,6 +600,7 @@ nav ul li a:hover {
 .register_form {
   width: 100%;
   padding: 60px;
+  /* outline: 1px solid white; */
 }
 
 .form_input {
@@ -673,7 +674,6 @@ nav ul li a:hover {
 }
 
 .back {
-  /* outline: 1px solid white; */
   height: 100%;
   width: 30px;
   align-self: flex-end;
