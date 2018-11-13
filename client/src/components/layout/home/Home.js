@@ -9,7 +9,6 @@ import Workflow from "../workflow/Workflow";
 class Home extends Component {
   render() {
     const { auth } = this.props;
-    console.log(auth.isAuthenticated);
     return (
       <React.Fragment>
         <div className="home">
