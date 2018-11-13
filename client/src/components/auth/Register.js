@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { withRouter } from "react-router-dom";
-import { userRegistration } from "../../redux/actions/registerActions";
+import { userRegistration } from "../../redux/actions/authActions";
 
 //components
 import Input from "./Input";
@@ -43,7 +43,6 @@ class Register extends Component {
 
   render() {
     const { errors } = this.props;
-    console.log(errors.firstname);
     return (
       <div className="register">
         <div className="register_h1_cont">

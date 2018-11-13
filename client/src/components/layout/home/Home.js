@@ -8,6 +8,8 @@ import Workflow from "../workflow/Workflow";
 
 class Home extends Component {
   render() {
+    const { auth } = this.props;
+    console.log(auth.isAuthenticated);
     return (
       <React.Fragment>
         <div className="home">
@@ -25,10 +27,12 @@ class Home extends Component {
               track all my works and projects. Also, this site is one big MERN
               application.
             </p>
-            <div className="login_and_register_btn_cont">
-              <Link to="/login">Login</Link>
-              <Link to="/register">Sign Up</Link>
-            </div>
+            {!auth.isAuthenticated && (
+              <div className="login_and_register_btn_cont">
+                <Link to="/login">Login</Link>
+                <Link to="/register">Sign Up</Link>
+              </div>
+            )}
           </div>
         </div>
         <HomeAbout />
@@ -38,4 +42,11 @@ class Home extends Component {
   }
 }
 
-export default Home;
+const mapStateToProps = state => ({
+  auth: state.auth
+});
+
+export default connect(
+  mapStateToProps,
+  null
+)(Home);
