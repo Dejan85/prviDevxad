@@ -1,11 +1,2 @@
-/*
- * ─── MAIN CSS ───────────────────────────────────────────────────────────────────
- */
-
-@import url("./css/layout/home.css");
-@import url("./css/layout/projects.css");
-/*
- * ─── RESPONSIVE ─────────────────────────────────────────────────────────────────
- */
-
-@import url("./css/responsive/480px.css");
+@import url("./css/home/home.css");
+@import url("./css/projects/projects.css");

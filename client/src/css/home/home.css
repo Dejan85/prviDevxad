@@ -1,3 +1,4 @@
+@import url("./responsive/480px.css");
 * {
     margin: 0;
     padding: 0;
@@ -330,7 +331,7 @@ nav ul li a:hover {
     font-weight: 600;
 }
 
-.home_about_exp_p_cont p:nth-of-type(1n + 1) {
+.home_about_exp_p_cont p:nth-of-type(1n+1) {
     padding-top: 20px;
     font-size: 14px;
     font-family: "Montserrat", sans-serif;

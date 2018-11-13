@@ -11,12 +11,12 @@ class Projects extends Component {
         <NavBar />
         <div className="projects_home">
           <div className="projects_h2_cont">
-            <h2>PROJECTS</h2>
+            <h2>Projects</h2>
           </div>
           <div className="projects_h3_cont">
             <h3>
               <span>S</span>
-              elect Tehnologies
+              elect Tehnologies...
             </h3>
             <p>
               I'm programming in several web technologies. Select the technology
