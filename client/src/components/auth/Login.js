@@ -47,7 +47,7 @@ class Login extends Component {
   }
 
   render() {
-    const { errors, auth } = this.props;
+    const { errors } = this.props;
     return (
       <div className="login">
         <div className="register_h1_cont">

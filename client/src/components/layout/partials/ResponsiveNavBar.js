@@ -14,7 +14,7 @@ const ResponsiveNabBar = props => {
         </Link>
       </li>
       <li>
-        <Link to="/">Projects</Link>
+        <Link to="/projects">Projects</Link>
       </li>
       <li>
         <Link to="/">About</Link>

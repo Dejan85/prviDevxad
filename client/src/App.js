@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./App.css";
-import "./components/responsiveCss/480px.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import jwt_decode from "jwt-decode";
 import setAuthToken from "./utils/setAuthToken";
@@ -11,6 +10,7 @@ import NavBar from "./components/layout/partials/NavBar";
 import Home from "./components/layout/home/Home";
 import Login from "./components/auth/Login";
 import Register from "./components/auth/Register";
+import Projects from "./components/layout/projects/Projects";
 
 //Redux
 import { Provider } from "react-redux";
@@ -26,6 +26,8 @@ if (localStorage.jwtToken) {
   store.dispatch(setCurrentUser(decode));
   //check for expired token
   const currentTime = Date.now() / 1000;
+  console.log(currentTime);
+  console.log(decode.exp);
   if (decode.exp < currentTime) {
     //Logout user
     store.dispatch(logoutUser());
@@ -46,6 +48,7 @@ class App extends Component {
             <Route exact path="/" component={Home} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
+            <Route exact path="/projects" component={Projects} />
           </div>
         </Router>
       </Provider>

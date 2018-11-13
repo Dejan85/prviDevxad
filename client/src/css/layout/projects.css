@@ -1,0 +1,84 @@
+/*
+ * ─── HOME ───────────────────────────────────────────────────────────────────────
+ */
+
+.projects_home {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    /* outline: 1px solid white; */
+    color: #ffffff;
+    padding: 25px;
+    margin-top: 270px;
+    background-color: #1b1b1b;
+    padding-bottom: 180px;
+    box-sizing: border-box;
+}
+
+.projects_h2_cont {
+    max-width: 130px;
+    width: 100%;
+}
+
+.projects_h3_cont {
+    max-width: 600px;
+    width: 100%;
+    padding-top: 60px;
+}
+
+.projects_h2_cont h2 {
+    display: block;
+    box-sizing: border-box;
+    font-size: 16px;
+    border-top: 2px solid #cc050c;
+    padding-top: 9px;
+    padding-right: 70px;
+    /* width: 130px; */
+}
+
+.projects_h3_cont h3 {
+    font-size: 50px;
+    line-height: 45px;
+    /* outline: 1px solid red; */
+}
+
+.projects_h3_cont h3 span {
+    color: #cc050c;
+    font-size: 60px;
+}
+
+.projects_h3_cont p {
+    padding-top: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 30px;
+    font-family: sans-serif;
+    max-width: 570px;
+    width: 100%;
+}
+
+/*
+ * ─── NAV ────────────────────────────────────────────────────────────────────────
+ */
+
+.projects_h3_cont ul {
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+}
+
+.projects_h3_cont ul li {
+    list-style-type: none;
+    text-align: center;
+    font-weight: 600;
+    background: #cc050c;
+    border-radius: 3px;
+    margin-left: 10px;
+    padding: 7px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.projects_h3_cont ul li:hover {
+    background: #960a0e;
+}
