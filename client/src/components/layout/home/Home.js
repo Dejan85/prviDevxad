@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
+import PropTypes from "prop-types";
 
 //components
 import HomeAbout from "./HomeAbout";
@@ -40,6 +41,10 @@ class Home extends Component {
     );
   }
 }
+
+Home.propTypes = {
+  auth: PropTypes.object.isRequired
+};
 
 const mapStateToProps = state => ({
   auth: state.auth

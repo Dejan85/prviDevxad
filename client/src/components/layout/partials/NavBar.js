@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import ResponsiveNabBar from "./ResponsiveNavBar";
 import { logoutUser } from "../../../redux/actions/authActions";
+import PropTypes from "prop-types";
 
 class NavBar extends Component {
   constructor(props) {
@@ -73,6 +74,11 @@ class NavBar extends Component {
     );
   }
 }
+
+NavBar.propTypes = {
+  auth: PropTypes.object.isRequired,
+  logoutUser: PropTypes.func.isRequired
+};
 
 const mapStateToProps = state => ({
   auth: state.auth

@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { logoutUser } from "../../../redux/actions/authActions";
+import PropTypes from "prop-types";
 
 const ResponsiveNabBar = props => {
-  console.log(props);
   const { auth } = props;
   return (
     <ul className="responsive_nav_li_ul">
@@ -30,6 +30,11 @@ const ResponsiveNabBar = props => {
       )}
     </ul>
   );
+};
+
+ResponsiveNabBar.propTypes = {
+  auth: PropTypes.object.isRequired,
+  logoutUser: PropTypes.func.isRequired
 };
 
 const mapStateToProps = state => ({

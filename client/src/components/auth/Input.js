@@ -1,5 +1,6 @@
 import React from "react";
 import classnames from "classnames";
+import PropTypes from "prop-types";
 
 const Input = ({ change, placeholder, value, name, label, type, errors }) => {
   return (
@@ -16,6 +17,19 @@ const Input = ({ change, placeholder, value, name, label, type, errors }) => {
       {errors && <div className="invalid-feedback">{errors}</div>}
     </div>
   );
+};
+
+Input.propTypes = {
+  change: PropTypes.func.isRequired,
+  placeholder: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  errors: PropTypes.string
+};
+
+Input.defaultProps = {
+  type: "text"
 };
 
 export default Input;
