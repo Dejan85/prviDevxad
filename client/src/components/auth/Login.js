@@ -50,43 +50,41 @@ class Login extends Component {
     const { errors } = this.props;
     return (
       <div className="login">
-        <div className="register_h1_cont">
-          <h1>Login</h1>
-        </div>
+        <div className="login_cont">
+          <div className="login_h1_cont">
+            <h1>Login</h1>
+          </div>
 
-        <div className="register_form">
-          <form onSubmit={this.onSubmit}>
-            <Input
-              placeholder="Email"
-              value={this.state.email}
-              name="email"
-              type="email"
-              change={this.onChange}
-              label="Email"
-              errors={errors.email}
-            />
+          <div className="login_form">
+            <form onSubmit={this.onSubmit}>
+              <Input
+                placeholder="Email"
+                value={this.state.email}
+                name="email"
+                type="email"
+                change={this.onChange}
+                label="Email"
+                errors={errors.email}
+              />
 
-            <Input
-              placeholder="Password"
-              value={this.state.password}
-              name="password"
-              type="password"
-              change={this.onChange}
-              label="Password"
-              errors={errors.password}
-            />
-            <div className="login_btn_cont">
-              <div className="form_input">
+              <Input
+                placeholder="Password"
+                value={this.state.password}
+                name="password"
+                type="password"
+                change={this.onChange}
+                label="Password"
+                errors={errors.password}
+              />
+              <div className="login_btn_cont">
                 <button type="submit">Login</button>
-              </div>
-              <div className="back">
                 <Link to="/">
                   {" "}
                   <i className="fas fa-arrow-left" />
                 </Link>
               </div>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     );

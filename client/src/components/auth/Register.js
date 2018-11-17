@@ -45,68 +45,66 @@ class Register extends Component {
     const { errors } = this.props;
     return (
       <div className="register">
-        <div className="register_h1_cont">
-          <h1>Sign Up</h1>
-        </div>
-        <div className="register_form">
-          <form noValidate onSubmit={this.onSubmit}>
-            <Input
-              label={"Firstname"}
-              change={this.onChange}
-              placeholder={"Firstname"}
-              value={this.state.firstname}
-              name={"firstname"}
-              type="text"
-              errors={errors.firstname}
-            />
-            <Input
-              label={"Lastname"}
-              change={this.onChange}
-              placeholder={"Lastname"}
-              value={this.state.lastname}
-              name={"lastname"}
-              type="text"
-              errors={errors.lastname}
-            />
-            <Input
-              label={"Email"}
-              change={this.onChange}
-              placeholder={"Email"}
-              value={this.state.email}
-              name={"email"}
-              type="text"
-              errors={errors.email}
-            />
-            <Input
-              label={"Password"}
-              change={this.onChange}
-              placeholder={"Password"}
-              value={this.state.password}
-              name={"password"}
-              type="password"
-              errors={errors.password}
-            />
-            <Input
-              label={"Password2"}
-              change={this.onChange}
-              placeholder={"Password2"}
-              value={this.state.password2}
-              name={"password2"}
-              type="password"
-              errors={errors.password2}
-            />
+        <div className="register_cont">
+          <div className="register_h1_cont">
+            <h1>Sign Up</h1>
+          </div>
+          <div className="register_form">
+            <form noValidate onSubmit={this.onSubmit}>
+              <Input
+                label={"Firstname"}
+                change={this.onChange}
+                placeholder={"Firstname"}
+                value={this.state.firstname}
+                name={"firstname"}
+                type="text"
+                errors={errors.firstname}
+              />
+              <Input
+                label={"Lastname"}
+                change={this.onChange}
+                placeholder={"Lastname"}
+                value={this.state.lastname}
+                name={"lastname"}
+                type="text"
+                errors={errors.lastname}
+              />
+              <Input
+                label={"Email"}
+                change={this.onChange}
+                placeholder={"Email"}
+                value={this.state.email}
+                name={"email"}
+                type="text"
+                errors={errors.email}
+              />
+              <Input
+                label={"Password"}
+                change={this.onChange}
+                placeholder={"Password"}
+                value={this.state.password}
+                name={"password"}
+                type="password"
+                errors={errors.password}
+              />
+              <Input
+                label={"Password2"}
+                change={this.onChange}
+                placeholder={"Password2"}
+                value={this.state.password2}
+                name={"password2"}
+                type="password"
+                errors={errors.password2}
+              />
 
-            <div className="login_btn_cont">
-              <div className="form_input">
+              <div className="login_btn_cont">
                 <button type="submit">Sign Up</button>
-              </div>
-              <div className="back">
                 <Link to="/">
                   <i className="fas fa-arrow-left" />
                 </Link>
               </div>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     );

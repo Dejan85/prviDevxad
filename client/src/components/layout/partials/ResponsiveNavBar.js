@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 const ResponsiveNabBar = props => {
   const { auth } = props;
   return (
-    <ul className="responsive_nav_li_ul">
+    <ul>
       <li>
         <Link className="active" to="/">
           Home

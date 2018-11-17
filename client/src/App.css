@@ -1,2 +1,5 @@
+@import url("./css/container/container.css");
+@import url("./css/nav/nav.css");
 @import url("./css/home/home.css");
+@import url("./css/auth/auth.css");
 @import url("./css/projects/projects.css");

@@ -1,0 +1,19 @@
+/*
+ * ─── LOGO ───────────────────────────────────────────────────────────────────────
+ */
+
+.logo h1 {
+    color: #cc050c;
+    font-size: 30px;
+    font-family: "Indie Flower", cursive;
+    letter-spacing: 10px;
+}
+
+.logo a {
+    text-decoration-line: none;
+}
+
+.logo a h1 span {
+    color: #ffffff;
+    font-size: 20px;
+}

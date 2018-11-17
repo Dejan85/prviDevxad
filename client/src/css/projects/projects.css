@@ -1,47 +1,53 @@
 @import url("./responsive/480px.css");
+@import url("./technology/tehnology.css");
 /*
- * ─── HOME ───────────────────────────────────────────────────────────────────────
+ * ─── PROJECT LANDING ───────────────────────────────────────────────────────────────
  */
 
-.projects_home {
+.projects_landing {
   display: flex;
-  flex-direction: row;
-  margin: auto;
-  /* outline: 1px solid white; */
-  color: #ffffff;
-  padding: 25px;
+  flex: 1;
+  justify-content: space-around;
   margin-top: 270px;
-  background-color: #1b1b1b;
-  padding-bottom: 180px;
-  box-sizing: border-box;
-  /* margin-top: -200px; */
+  color: white;
+  padding-bottom: 200px;
+  /* outline: 1px solid red; */
 }
+
+/*
+ * ─── PROJECT H2 CONT ────────────────────────────────────────────────────────────────────
+ */
 
 .projects_h2_cont {
-  max-width: 65px;
-  width: 100%;
+  flex: 1;
+  /* outline: 1px solid orange; */
+  padding-left: 140px;
 }
+
+/*
+ * ─── PROJECT H3 CONT ────────────────────────────────────────────────────────────
+ */
 
 .projects_h3_cont {
-  max-width: 600px;
-  width: 100%;
-  padding-top: 60px;
+  flex: 17;
+  justify-self: flex-end;
+  padding-top: 70px;
+  /* outline: 1px solid green; */
 }
 
+/*
+ * ─── H2 CONT H3 CONT STYLE ──────────────────────────────────────────────────────
+ */
+
 .projects_h2_cont h2 {
-  display: block;
-  box-sizing: border-box;
   font-size: 16px;
   border-top: 2px solid #cc050c;
   padding-top: 9px;
-  padding-right: 70px;
-  /* width: 130px; */
 }
 
 .projects_h3_cont h3 {
   font-size: 50px;
   line-height: 45px;
-  /* outline: 1px solid red; */
 }
 
 .projects_h3_cont h3 span {
@@ -55,32 +61,74 @@
   font-weight: 600;
   line-height: 30px;
   font-family: sans-serif;
+  text-align: justify;
   max-width: 570px;
   width: 100%;
 }
 
 /*
- * ─── NAV ────────────────────────────────────────────────────────────────────────
+ * ─── PROJECT NAV BAR ────────────────────────────────────────────────────────────────
  */
 
-.projects_h3_cont ul {
+.project_navbar {
   display: flex;
   flex-direction: row;
   padding-top: 50px;
 }
 
-.projects_h3_cont ul li {
+.project_navbar li {
   list-style-type: none;
   text-align: center;
   font-weight: 600;
   background: #cc050c;
   border-radius: 3px;
-  margin-left: 10px;
   padding: 7px;
   cursor: pointer;
   font-size: 15px;
 }
 
-.projects_h3_cont ul li:hover {
+.project_navbar li:nth-of-type(2n) {
+  margin-left: 10px;
+}
+
+.project_navbar li:nth-of-type(3n) {
+  margin-left: 10px;
+}
+
+.project_navbar li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.project_navbar li:hover {
+  background: #960a0e;
+}
+
+/*
+ * ─── SPA NAV BAR ────────────────────────────────────────────────────────────────
+ */
+
+.spa_project_navbar {
+  display: flex;
+  flex-direction: row;
+  padding-top: 100px;
+  justify-content: center;
+}
+
+.spa_project_navbar li {
+  list-style-type: none;
+  text-align: center;
+  font-weight: 600;
+  /* background: #cc050c; */
+  border-radius: 3px;
+  margin-left: 10px;
+  padding: 7px;
+  cursor: pointer;
+  font-size: 15px;
+  color: white;
+}
+
+.spa_project_navbar li:hover {
   background: #960a0e;
 }

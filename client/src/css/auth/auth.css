@@ -1,0 +1,115 @@
+@import url("./responsive/auth.css");
+/*
+  * ─── LOGIN ────────────────────────────────────────────────────────────────────
+  */
+
+.login,
+.register {
+    display: flex;
+    height: 100vh;
+    outline: 12px solid red;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.login_cont,
+.register_cont {
+    display: flex;
+    flex-direction: row;
+    /* outline: 1px solid red; */
+}
+
+/*
+ * ─── LOGIN FORM ─────────────────────────────────────────────────────────────────
+ */
+
+.login_form,
+.register_form {
+    padding-top: 70px;
+    /* padding-left: 20px; */
+}
+
+/*
+ * ─── LOGIN INPUT ────────────────────────────────────────────────────────────────
+ */
+
+.form_input {
+    padding-bottom: 20px;
+}
+
+.form_input label {
+    padding-bottom: 5px;
+}
+
+.form_input input {
+    width: 400px;
+    padding: 10px;
+}
+
+.register_form .form_input input {
+    width: 600px;
+}
+
+/*
+ * ─── LOGIN FORM INPUT STYLE ─────────────────────────────────────────────────────
+ */
+
+.login_h1_cont h1,
+.register_h1_cont h1 {
+    font-size: 16px;
+    border-top: 2px solid #cc050c;
+    padding-top: 5px;
+}
+
+.form_input label {
+    display: block;
+    font-size: 12px;
+    padding-left: 10px;
+    color: rgb(109, 109, 109);
+}
+
+.form_input input {
+    border: none;
+    border-radius: 5px;
+    background: #555558;
+    color: white;
+}
+
+/*
+ * ─── FORM INPUT BTN ─────────────────────────────────────────────────────────────
+ */
+
+.login_btn_cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    /* outline: 1px solid red; */
+}
+
+button {
+    border: none;
+    border-radius: 2px;
+    background-color: #cc050c;
+    width: 100px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 13px;
+    transition-duration: 0.7s;
+}
+
+i {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding-top: 7px;
+    /* outline: 1px solid white; */
+}
+
+/*
+ * ─── REGISTER FORM ──────────────────────────────────────────────────────────────
+ */

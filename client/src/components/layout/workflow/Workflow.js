@@ -9,109 +9,111 @@ import colorGame from "../../img/projects/colorGame.png";
 class Workflow extends Component {
   render() {
     return (
-      <div className="workflow">
-        <div className="workflow_h1_cont">
-          <h1>My workflow.</h1>
-          <h2>
-            <Link to="/">Explore all...</Link>
-          </h2>
-        </div>
-        <div className="workflow_project">
-          <div className="workflow_project_img">
-            i<img src={pigGame} alt="" />
-            <Link to="/">Try it live</Link>
+      <div className="container">
+        <div className="workflow">
+          <div className="workflow_h1_cont">
+            <h1>My workflow.</h1>
+            <h2>
+              <Link to="/">Explore all...</Link>
+            </h2>
           </div>
+          <div className="workflow_project ">
+            <div className="workflow_project_img">
+              <img src={pigGame} alt="" />
+              <Link to="/">Try it live</Link>
+            </div>
 
-          <div className="workflow_project_description">
-            <div className="workflow_project_description_line" />
-            <h6>Simple Javascript game</h6>
-            <h3>Pig Game</h3>
-            <p>
-              This is small javascript game This is small javascript game This
-              is small javascript game. This is small javascript game This is
-              small javascript game This is small javascript game
-            </p>
-            <Link to="/">Try it live</Link>
+            <div className="workflow_project_description">
+              <div className="workflow_project_description_line" />
+              <h6>Simple Javascript game</h6>
+              <h3>Pig Game</h3>
+              <p>
+                This is small javascript game This is small javascript game This
+                is small javascript game. This is small javascript game This is
+                small javascript game This is small javascript game
+              </p>
+              <Link to="/">Try it live</Link>
+            </div>
           </div>
-        </div>
-        {/* bank app */}
-        <div className="workflow_project">
-          <div className="workflow_project_img">
-            i<img src={bankapp} alt="" />
-            <Link to="/">Try it live</Link>
-          </div>
-          <div className="workflow_project_description">
-            <div className="workflow_project_description_line" />
+          {/* bank app */}
+          {/* <div className="workflow_project">
+            <div className="workflow_project_img">
+              i<img src={bankapp} alt="" />
+              <Link to="/">Try it live</Link>
+            </div>
+            <div className="workflow_project_description">
+              <div className="workflow_project_description_line" />
 
-            <h6>Simple Javascript game</h6>
-            <h3>Pig Game</h3>
-            <p>
-              This is small javascript game This is small javascript game This
-              is small javascript game. This is small javascript game This is
-              small javascript game This is small javascript game
-            </p>
-            <Link to="/">Try it live</Link>
-          </div>
-        </div>
+              <h6>Simple Javascript game</h6>
+              <h3>Pig Game</h3>
+              <p>
+                This is small javascript game This is small javascript game This
+                is small javascript game. This is small javascript game This is
+                small javascript game This is small javascript game
+              </p>
+              <Link to="/">Try it live</Link>
+            </div>
+          </div> */}
 
-        {/* node3 */}
-        <div className="workflow_project">
-          <div className="workflow_project_img">
-            i<img src={node3} alt="" />
-            <Link to="/">Try it live</Link>
-          </div>
-          <div className="workflow_project_description">
-            <div className="workflow_project_description_line" />
+          {/* node3 */}
+          {/* <div className="workflow_project ">
+            <div className="workflow_project_img">
+              i<img src={node3} alt="" />
+              <Link to="/">Try it live</Link>
+            </div>
+            <div className="workflow_project_description ">
+              <div className="workflow_project_description_line" />
 
-            <h6>Simple Javascript game</h6>
-            <h3>Pig Game</h3>
-            <p>
-              This is small javascript game This is small javascript game This
-              is small javascript game. This is small javascript game This is
-              small javascript game This is small javascript game
-            </p>
-            <Link to="/">Try it live</Link>
-          </div>
-        </div>
+              <h6>Simple Javascript game</h6>
+              <h3>Pig Game</h3>
+              <p>
+                This is small javascript game This is small javascript game This
+                is small javascript game. This is small javascript game This is
+                small javascript game This is small javascript game
+              </p>
+              <Link to="/">Try it live</Link>
+            </div>
+          </div> */}
 
-        {/* todoapp */}
-        <div className="workflow_project">
-          <div className="workflow_project_img">
-            i<img src={todoapp} alt="" />
-            <Link to="/">Try it live</Link>
-          </div>
-          <div className="workflow_project_description">
-            <div className="workflow_project_description_line" />
+          {/* todoapp */}
+          {/* <div className="workflow_project">
+            <div className="workflow_project_img">
+              i<img src={todoapp} alt="" />
+              <Link to="/">Try it live</Link>
+            </div>
+            <div className="workflow_project_description">
+              <div className="workflow_project_description_line" />
 
-            <h6>Simple Javascript game</h6>
-            <h3>Pig Game</h3>
-            <p>
-              This is small javascript game This is small javascript game This
-              is small javascript game. This is small javascript game This is
-              small javascript game This is small javascript game
-            </p>
-            <Link to="/">Try it live</Link>
-          </div>
-        </div>
+              <h6>Simple Javascript game</h6>
+              <h3>Pig Game</h3>
+              <p>
+                This is small javascript game This is small javascript game This
+                is small javascript game. This is small javascript game This is
+                small javascript game This is small javascript game
+              </p>
+              <Link to="/">Try it live</Link>
+            </div>
+          </div> */}
 
-        {/* colorGame */}
-        <div className="workflow_project">
-          <div className="workflow_project_img">
-            i<img src={colorGame} alt="" />
-            <Link to="/">Try it live</Link>
-          </div>
-          <div className="workflow_project_description">
-            <div className="workflow_project_description_line" />
+          {/* colorGame */}
+          {/* <div className="workflow_project">
+            <div className="workflow_project_img">
+              i<img src={colorGame} alt="" />
+              <Link to="/">Try it live</Link>
+            </div>
+            <div className="workflow_project_description">
+              <div className="workflow_project_description_line" />
 
-            <h6>Simple Javascript game</h6>
-            <h3>Pig Game</h3>
-            <p>
-              This is small javascript game This is small javascript game This
-              is small javascript game. This is small javascript game This is
-              small javascript game This is small javascript game
-            </p>
-            <Link to="/">Try it live</Link>
-          </div>
+              <h6>Simple Javascript game</h6>
+              <h3>Pig Game</h3>
+              <p>
+                This is small javascript game This is small javascript game This
+                is small javascript game. This is small javascript game This is
+                small javascript game This is small javascript game
+              </p>
+              <Link to="/">Try it live</Link>
+            </div>
+          </div> */}
         </div>
       </div>
     );

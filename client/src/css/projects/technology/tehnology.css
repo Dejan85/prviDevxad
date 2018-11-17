@@ -1,0 +1,195 @@
+/*
+ * ─── JAVASCRIPT HOME ────────────────────────────────────────────────────────────
+ */
+
+.technology {
+    /* outline: 1px solid red; */
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    margin-top: 170px;
+    color: white;
+    padding-bottom: 100px;
+}
+
+/*
+ * ─── H2 CONT ────────────────────────────────────────────────────────────────────
+ */
+
+.technology_h2_cont {
+    flex: 1;
+    /* outline: 1px solid orange; */
+    padding-left: 140px;
+}
+
+.technology_h3_cont {
+    flex: 8;
+    justify-self: flex-end;
+    padding-top: 70px;
+    /* outline: 1px solid green; */
+}
+
+/*
+ * ─── H2 CONT H3 CONT STYLE ──────────────────────────────────────────────────────
+ */
+
+.technology_h2_cont h2 {
+    font-size: 16px;
+    border-top: 2px solid #cc050c;
+    padding-top: 9px;
+}
+
+.technology_h3_cont h3 {
+    font-size: 50px;
+    line-height: 45px;
+}
+
+.technology_h3_cont h3 span {
+    color: #cc050c;
+    font-size: 60px;
+}
+
+.technology_h3_cont p {
+    padding-top: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 30px;
+    font-family: sans-serif;
+    text-align: justify;
+    max-width: 570px;
+    width: 100%;
+}
+
+/*
+ * ─── REACT ──────────────────────────────────────────────────────────────────────
+ */
+
+.technology_h3_cont {
+    flex: 11;
+}
+
+/*
+ * ─── NODE ───────────────────────────────────────────────────────────────────────
+ */
+
+.technology_h3_cont {
+    flex: 11;
+}
+
+/*
+   * ─── MERN ───────────────────────────────────────────────────────────────────────
+   */
+
+.technology_h3_cont {
+    flex: 23;
+}
+
+/*
+ * ─── TECHNOLOGY PROJECTS ────────────────────────────────────────────────────────────────
+ */
+
+.technology_projects {
+    background-color: #ecedf4;
+}
+
+.technology_projects_cont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* outline: 1px solid red; */
+    padding-bottom: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #ecedf4;
+    width: 1297px;
+    margin: auto;
+    height: auto;
+}
+
+.color_game {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    /* outline: 3px solid orange; */
+    margin-top: 70px;
+}
+
+.color_game img {
+    width: 100%;
+    /* height: 100%; */
+    height: auto;
+    border-radius: 5px;
+}
+
+/*
+  * ─── WORKFLOW PROJECT DESCRIPTION ───────────────────────────────────────────────
+  */
+
+.color_game_description {
+    max-width: 600px;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    padding-bottom: 10px;
+}
+
+.color_game_description_line {
+    margin-top: 68px;
+    border-bottom: 1px solid #e42836;
+    width: 12px;
+    height: 1px;
+}
+
+.color_game_description h6 {
+    margin-top: 7px;
+    color: rgb(109, 109, 109);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.color_game_description h3 {
+    padding-top: 5px;
+    /* color: #ffffff; */
+    color: #1b1b1b;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.color_game_description p {
+    padding-top: 40px;
+    color: rgb(214, 214, 214);
+    font-size: 14px;
+    font-weight: 500;
+    text-align: justify;
+    color: #1b1b1b;
+}
+
+.color_game_description a {
+    display: inline-block;
+    width: 80px;
+    padding: 7px;
+    margin-top: 30px;
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration-line: none;
+    border: none;
+    border-radius: 4px;
+    background-color: #cc050c;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 13px;
+    transition-duration: 0.7s;
+}
+
+.color_game_description a:hover {
+    background-color: #960a0e;
+}
+
+.color_game_description a:nth-of-type(2n) {
+    margin-left: 20px;
+}
+
+.color_game_description a:nth-of-type(3n) {
+    margin-left: 20px;
+}

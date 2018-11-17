@@ -1,0 +1,57 @@
+@import url("../../css/logo/logo.css");
+/*
+ * ─── NAV ────────────────────────────────────────────────────────────────────────
+ */
+
+.fix {
+  position: fixed;
+  width: 100%;
+  background-color: #1b1b1b;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* outline: 1px solid orange; */
+}
+
+.responsive_nav {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* outline: 1px solid blue; */
+}
+
+/*
+ * ─── FULLSCREENNAVBAR ───────────────────────────────────────────────────────────
+ */
+
+.fullscreenNavBar ul {
+  /* outline: 1px solid green; */
+  display: flex;
+}
+
+.fullscreenNavBar ul li {
+  width: 100px;
+  list-style-type: none;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.fullscreenNavBar ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  /* border-bottom: solid 2px #cc050c; */
+  padding-bottom: 7px;
+}
+
+.fullscreenNavBar ul li a:hover {
+  border-bottom: 2px solid #cc050c;
+  border-width: 5px;
+  transition: border-width 0.18s linear;
+}

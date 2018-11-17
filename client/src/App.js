@@ -6,11 +6,11 @@ import setAuthToken from "./utils/setAuthToken";
 import { setCurrentUser, logoutUser } from "./redux/actions/authActions";
 
 //components
-import NavBar from "./components/layout/partials/NavBar";
 import Home from "./components/layout/home/Home";
 import Login from "./components/auth/Login";
 import Register from "./components/auth/Register";
 import Projects from "./components/layout/projects/Projects";
+import ProjectContent from "./components/layout/projects/ProjectContent";
 
 //Redux
 import { Provider } from "react-redux";
@@ -27,7 +27,6 @@ if (localStorage.jwtToken) {
   //check for expired token
   const currentTime = Date.now() / 1000;
   console.log(currentTime);
-  console.log(decode.exp);
   if (decode.exp < currentTime) {
     //Logout user
     store.dispatch(logoutUser());
@@ -43,12 +42,38 @@ class App extends Component {
     return (
       <Provider store={store}>
         <Router>
-          <div className="container ">
-            <NavBar />
+          <div className="App ">
+            {/* home routes */}
             <Route exact path="/" component={Home} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/projects" component={Projects} />
+            {/* projects routes */}
+            <Route
+              exact
+              path="/projects/technology"
+              component={ProjectContent}
+            />
+            <Route
+              exact
+              path="/projects/technology/javasript"
+              component={ProjectContent}
+            />
+            <Route
+              exact
+              path="/projects/technology/react"
+              component={ProjectContent}
+            />
+            <Route
+              exact
+              path="/projects/technology/node"
+              component={ProjectContent}
+            />
+            <Route
+              exact
+              path="/projects/technology/mern"
+              component={ProjectContent}
+            />
           </div>
         </Router>
       </Provider>
