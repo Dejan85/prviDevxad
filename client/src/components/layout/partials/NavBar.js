@@ -4,36 +4,42 @@ import { connect } from "react-redux";
 import ResponsiveNabBar from "./ResponsiveNavBar";
 import { logoutUser } from "../../../redux/actions/authActions";
 import PropTypes from "prop-types";
+import DropDown from "./DropDown";
 
 class NavBar extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      toggleMenu: false
+      // toggleMenu: false,
+      toggleDropDown: false
     };
   }
 
   showMenu = () => {
     this.setState({
-      toggleMenu: !this.state.toggleMenu
+      toggleMenu: !this.state.toggleMenu,
+      toggleDropDown: !this.state.toggleDropDown
     });
   };
 
-  render() {
+  componentDidMount() {
     window.onscroll = () => {
       this.setState({
-        toggleMenu: false
+        // toggleMenu: false,
+        toggleDropDown: false
       });
     };
+  }
 
+  render() {
     const { auth } = this.props;
 
     return (
       <div className="fix">
         <div className="container">
           <div className="navbar">
-            <div className="logo ">
+            <div className="logo">
               <Link to="/">
                 <h1>
                   D<span>evxad</span>
@@ -57,11 +63,15 @@ class NavBar extends Component {
                   <Link to="/">Contact </Link>
                 </li>
                 {auth.isAuthenticated && (
-                  <li onClick={this.props.logoutUser} className="logout_li">
-                    Logout:{" "}
+                  <div className="nav_drop_menu" onClick={this.showMenu}>
+                    Welcome:{" "}
                     {/* <img className="avatar" src={auth.user.avatar} alt="avatar" /> */}
                     {auth.user.name}
-                  </li>
+                    <i className="fas fa-sort-down" />
+                    {this.state.toggleDropDown && (
+                      <DropDown logout={this.props.logoutUser} />
+                    )}
+                  </div>
                 )}
               </ul>
             </div>

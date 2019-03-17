@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
+// import PropTypes from "prop-types";
 
 //Components
 import NavBar from "../partials/NavBar";
@@ -32,6 +34,7 @@ class Projects extends Component {
                 technology in which you want to see the projects. You can see
                 the code, try the application live, or see it on github.
               </p>
+
               <ProjectNavBar routes={this.state.routes} />
             </div>
           </div>
@@ -41,4 +44,4 @@ class Projects extends Component {
   }
 }
 
-export default Projects;
+export default connect(null)(Projects);

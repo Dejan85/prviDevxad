@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import "./App.css";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import jwt_decode from "jwt-decode";
 import setAuthToken from "./utils/setAuthToken";
-import { setCurrentUser, logoutUser } from "./redux/actions/authActions";
+import { setCurrentUser, logoutUser, admin } from "./redux/actions/authActions";
+import PrivateRoute from "./components/common/PrivateRoute";
 
 //components
 import Home from "./components/layout/home/Home";
@@ -11,6 +12,7 @@ import Login from "./components/auth/Login";
 import Register from "./components/auth/Register";
 import Projects from "./components/layout/projects/Projects";
 import ProjectContent from "./components/layout/projects/ProjectContent";
+import Dashboard from "./components/admin/Dashboard";
 
 //Redux
 import { Provider } from "react-redux";
@@ -24,9 +26,10 @@ if (localStorage.jwtToken) {
   const decode = jwt_decode(localStorage.jwtToken);
   //Set user and isAuthenticated
   store.dispatch(setCurrentUser(decode));
+  store.dispatch(admin(decode));
+
   //check for expired token
-  const currentTime = Date.now() / 1000;
-  console.log(currentTime);
+  const currentTime = Date.now() / 5600;
   if (decode.exp < currentTime) {
     //Logout user
     store.dispatch(logoutUser());
@@ -74,6 +77,13 @@ class App extends Component {
               path="/projects/technology/mern"
               component={ProjectContent}
             />
+            <Switch>
+              <PrivateRoute
+                exact
+                path="/admin/dashboard"
+                component={Dashboard}
+              />
+            </Switch>
           </div>
         </Router>
       </Provider>

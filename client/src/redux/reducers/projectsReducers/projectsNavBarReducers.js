@@ -1,6 +1,8 @@
 import { SWITCH_PAGE } from "../../actions/types";
 
-const initialState = {};
+const initialState = {
+  name: "js"
+};
 
 export default function(state = initialState, action) {
   switch (action.type) {

@@ -4,26 +4,27 @@
  */
 
 .fix {
-  position: fixed;
-  width: 100%;
-  background-color: #1b1b1b;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  /* outline: 1px solid orange; */
+    position: fixed;
+    width: 100%;
+    background-color: #1b1b1b;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* outline: 1px solid orange; */
 }
 
 .responsive_nav {
-  display: none;
+    display: none;
 }
 
 .navbar {
-  display: flex;
-  flex: 1;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  /* outline: 1px solid blue; */
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* outline: 1px solid blue; */
 }
 
 /*
@@ -31,27 +32,71 @@
  */
 
 .fullscreenNavBar ul {
-  /* outline: 1px solid green; */
-  display: flex;
+    display: flex;
 }
 
 .fullscreenNavBar ul li {
-  width: 100px;
-  list-style-type: none;
-  font-family: sans-serif;
-  font-weight: 500;
-  font-size: 15px;
+    width: 100px;
+    list-style-type: none;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* outline: 2px solid green; */
 }
 
 .fullscreenNavBar ul li a {
-  text-decoration: none;
-  color: #ffffff;
-  /* border-bottom: solid 2px #cc050c; */
-  padding-bottom: 7px;
+    text-decoration: none;
+    color: #ffffff;
+    /* border-bottom: solid 2px #cc050c; */
+    padding-bottom: 7px;
 }
 
 .fullscreenNavBar ul li a:hover {
-  border-bottom: 2px solid #cc050c;
-  border-width: 5px;
-  transition: border-width 0.18s linear;
+    border-bottom: 2px solid #cc050c;
+    border-width: 5px;
+    transition: border-width 0.18s linear;
+}
+
+/*
+ * ─── DROP MENU ─────────────────────────────────────────────────────────────────────
+ */
+
+.nav_drop_menu {
+    width: auto !important;
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration-line: none;
+    border: none;
+    border-radius: 4px;
+    background-color: #cc050c;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 13px;
+    transition-duration: 0.7s;
+    cursor: pointer;
+    padding: 7px;
+    user-select: none;
+}
+
+.nav_drop_menu i {
+    display: inline;
+    padding-left: 7px;
+}
+
+.nav_drop_menu:hover {
+    background-color: #960a0e;
+}
+
+.nav_drop_menu ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.nav_drop_menu ul li {
+    width: 100%;
+    text-align: right;
 }

@@ -1,0 +1,114 @@
+@import url("./dashboard_content.css");
+@import url("./add_projects.css");
+@import url("./add_project_code.css");
+/*
+ * ─── DASHBOARD ──────────────────────────────────────────────────────────────────
+ */
+
+.dashboard {
+    display: flex;
+    background: #ecedf4;
+}
+
+/*
+ * ─── DASHBOARD PANEL ───────────────────────────────────────────────────────────
+ */
+
+.dashboard_panel {
+    display: flex;
+    flex-direction: column;
+    /* width: 14%; */
+    max-width: 250px;
+    width: 100%;
+    /* height: 100vh; */
+    background-color: #1b1b1b;
+}
+
+.dashboard_panel .logo {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    /* border-bottom: 2px solid #44080a; */
+}
+
+/*
+ * ─── DASHBOARD NAV ──────────────────────────────────────────────────────────────
+ */
+
+.dashboard_nav {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    /* outline: 1px solid red; */
+}
+
+.dashboard_nav h1 {
+    font-size: 15px;
+    color: white;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+/*
+ * ─── DASHBOARD PROJECTS NAV ──────────────────────────────────────────────────────
+ */
+
+.dashboard_projects_nav {
+    display: flex;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.i_p {
+    display: flex;
+    align-items: baseline;
+    padding-left: 15px;
+    font-size: 13px;
+}
+
+.i_p i {
+    font-size: 17px;
+}
+
+.i_p p:last-child {
+    padding-left: 10px;
+}
+
+.dashboard_projects_nav i:last-child {
+    padding-right: 20px;
+    /* padding-top: 12px; */
+}
+
+/*
+ * ─── DASHBOARD DROP MENU ────────────────────────────────────────────────────────
+ */
+
+.dashboard_drop_menu {
+    /* outline: 1px solid green; */
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
+.dashboard_drop_menu li {
+    list-style-type: none;
+    /* outline: 1px solid red; */
+    padding: 10px;
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+}
+
+.dashboard_drop_menu li p:hover {
+    border-bottom: 1px solid #cc050c;
+    border-width: 2px;
+    transition: border-width 0.18s linear;
+}
+
+.dashboard_drop_menu li p {
+    padding-bottom: 3px;
+    display: inline;
+}

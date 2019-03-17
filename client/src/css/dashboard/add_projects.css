@@ -1,0 +1,97 @@
+/*
+ * ─── ADD PROJECTS ───────────────────────────────────────────────────────────────
+ */
+
+.add_projects {
+    background-color: white;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 103px;
+    border: 1px solid rgb(241, 237, 237);
+    box-shadow: 0px 1px 12px rgb(180, 174, 174);
+    /* height: 77vh; */
+}
+
+.add_projects h1 {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px;
+    /* border-bottom: 1px solid red; */
+}
+
+.add_projects_line {
+    border-bottom: 1px solid #e2272d;
+    width: 70px;
+    margin-left: 10px;
+}
+
+/*
+ * ─── ADD PROJECTS FORM ──────────────────────────────────────────────────────────
+ */
+
+.add_projects_form {
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.add_projects_form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add_projects_input_holder {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    padding-bottom: 20px;
+}
+
+.add_projects_input_holder label {
+    display: block;
+    width: 100px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.add_projects_input_holder input,
+.add_projects_input_holder textarea,
+.add_projects_input_holder div {
+    margin-left: 150px;
+    flex: 1;
+    margin-right: 20px;
+}
+
+.add_projects_input_holder input::placeholder,
+.add_projects_input_holder textarea::placeholder {
+    padding-left: 10px;
+}
+
+.add_projects_input_holder textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5px;
+}
+
+.add_projects_input_holder select {
+    padding: 0 !important;
+}
+
+.add_projects_input_holder button {
+    margin-left: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.add_projects_input_holder i {
+    color: black;
+    margin-left: 150px;
+}
+
+.upload_file {
+    display: flex;
+    flex-direction: column;
+}
+
+.upload_file input {
+    margin-left: 0 !important;
+    padding-bottom: 10px;
+}

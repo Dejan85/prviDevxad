@@ -1,0 +1,110 @@
+/*
+ * ─── ADD PROJECT CODE CSS ───────────────────────────────────────────────────────
+ */
+
+.add_projects_code_container {
+  background-color: white;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 103px;
+  border: 1px solid rgb(241, 237, 237);
+  box-shadow: 0px 1px 12px rgb(180, 174, 174);
+  min-height: 77vh;
+}
+
+.add_projects_code_container h1 {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.add_projects_code_cont {
+  display: flex;
+}
+
+/*
+ * ─── FILE STRUCTURE ─────────────────────────────────────────────────────────────
+ */
+
+.file_structure {
+  display: flex;
+  flex-direction: column;
+  /* outline: 1px solid red; */
+  width: 20%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 20px;
+}
+
+.file_structure button {
+  padding: 5px;
+  width: 100%;
+}
+
+.file_structure_header {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.file_structure i {
+  color: black;
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.file_structure i:hover {
+  color: red;
+}
+
+.file_structure i:first-child {
+  padding-right: 8px;
+}
+
+.file_structure i:last-child {
+  padding-left: 8px;
+}
+
+/* .file_structure_body {
+    padding-left: 10px;
+} */
+
+.file_structure_body input {
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.file {
+  margin-left: 15px;
+}
+
+.folder {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.folder li {
+  display: flex;
+  margin: 0 !important;
+}
+
+.folder li i {
+  pointer-events: none;
+}
+
+/*
+ * ─── CODE ───────────────────────────────────────────────────────────────────────
+ */
+
+.code {
+  /* outline: 1px solid orange; */
+  width: 80%;
+}
+
+.code pre {
+  list-style-type: decimal;
+}

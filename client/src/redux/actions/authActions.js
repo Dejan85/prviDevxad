@@ -1,4 +1,4 @@
-import { GET_ERRORS, SET_CURRENT_USER } from "./types";
+import { GET_ERRORS, SET_CURRENT_USER, IS_ADMIN } from "./types";
 import axios from "axios";
 import jwt_decode from "jwt-decode";
 import setAuthToken from "../../utils/setAuthToken";
@@ -31,6 +31,7 @@ export const loginUser = userData => dispatch => {
       const decoded = jwt_decode(token);
       //Set current user
       dispatch(setCurrentUser(decoded));
+      dispatch(admin(decoded));
     })
     .catch(err => {
       dispatch({
@@ -47,13 +48,20 @@ export const setCurrentUser = decoded => {
   };
 };
 
+export const admin = decoded => {
+  return {
+    type: IS_ADMIN,
+    payload: decoded.id
+  };
+};
+
 //Log user out
 export const logoutUser = () => dispatch => {
-  console.log("radi");
   //Remove token from local storage
   localStorage.removeItem("jwtToken");
   //Remove auth header from feature request
   setAuthToken(false);
   //Set current user to {} wich will set isAuthenticated to false
   dispatch(setCurrentUser({}));
+  dispatch(admin({}));
 };
